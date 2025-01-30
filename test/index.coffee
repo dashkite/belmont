@@ -2,9 +2,11 @@ import assert from "@dashkite/assert"
 import {test, success} from "@dashkite/amen"
 import print from "@dashkite/amen-console"
 
+import $ from "../src"
+
 do ->
 
-  print await test "Belmont", [
+  print await test "Halstead", [
 
     test "todo"
 
