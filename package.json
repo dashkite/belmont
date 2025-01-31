@@ -48,6 +48,8 @@
     "@dashkite/addison": "link:../addison",
     "@dashkite/generic": "link:../generic",
     "@dashkite/joy": "link:../joy",
-    "@dashkite/reactive": "link:../reactive"
+    "@dashkite/reactive": "link:../reactive",
+    "@dashkite/scout": "link:../scout",
+    "@dashkite/url-codex": "link:../url-codex"
   }
 }

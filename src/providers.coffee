@@ -1,6 +1,6 @@
 protocol = ( url ) ->
-  { protocol } = new URL url
-  protocol[...-1]
+  ( new URL url )
+    .protocol[...-1]
 
 Dictionary = {}
 

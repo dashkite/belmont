@@ -2,12 +2,16 @@ import Observer from "./observer"
 
 class Provider
 
-  @make: ( url ) ->
+  @make: ({ url, locator }) ->
     Object.assign ( new @ ),
-      { url, observers: new Set }
+      { url, locator, observers: new Set }
+  
+  resolve: -> @.constructor.resolve @locator
   
   observe: ->
+
     observer = Observer.make()
+
     @get()
       .when "value", ({ value }) ->
         observer.dispatch { name: "update", value }

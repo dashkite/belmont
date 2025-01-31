@@ -20,6 +20,12 @@ importers:
       '@dashkite/reactive':
         specifier: link:../reactive
         version: link:../reactive
+      '@dashkite/scout':
+        specifier: link:../scout
+        version: link:../scout
+      '@dashkite/url-codex':
+        specifier: link:../url-codex
+        version: link:../url-codex
     devDependencies:
       '@dashkite/amen':
         specifier: ^0.2.0
