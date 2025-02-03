@@ -18,11 +18,14 @@ class Provider
       .when "failure", ( error ) ->
         observer.dispatch error
       .run()
+    
     @observers.add observer
     observer
     
   cancel: ( observer ) ->
-    @observers.delete observer
+    if @observers.has observer
+      observer.dispatch "cancel"
+      @observers.delete observer
       
   dispatch: ( event ) ->
     @observers.forEach ( observer ) ->
