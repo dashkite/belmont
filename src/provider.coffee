@@ -9,22 +9,13 @@ class Provider
   resolve: -> @.constructor.resolve @locator
   
   observe: ->
-
-    observer = Observer.make()
-
-    @get()
-      .when "value", ({ value }) ->
-        observer.dispatch { name: "update", value }
-      .when "failure", ( error ) ->
-        observer.dispatch error
-      .run()
-    
+    observer = Observer.make()    
     @observers.add observer
     observer
     
   cancel: ( observer ) ->
     if @observers.has observer
-      observer.dispatch "cancel"
+      observer.cancel()
       @observers.delete observer
       
   dispatch: ( event ) ->

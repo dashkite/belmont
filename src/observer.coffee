@@ -16,4 +16,7 @@ class Observer extends EventReactor
 
   dispatch: ( event ) -> @queue.enqueue event
 
+  cancel: -> @dispatch name: "cancel"
+
+
 export default Observer
