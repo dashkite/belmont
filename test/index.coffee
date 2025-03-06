@@ -6,7 +6,7 @@ import $ from "../src"
 
 do ->
 
-  print await test "Halstead", [
+  print await test "Belmont", [
 
     test "todo"
 

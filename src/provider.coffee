@@ -1,25 +1,16 @@
-import Observer from "./observer"
+# TODO switch to using a topic?
+#      do we even need a base class now?
+#      could we just do `x.topic.subscribe()`?
 
-class Provider
+import Topic from "@dashkite/reactive/topic"
+
+class Provider extends Topic
 
   @make: ({ url, locator }) ->
-    Object.assign ( new @ ),
-      { url, locator, observers: new Set }
-  
-  resolve: -> @.constructor.resolve @locator
-  
-  observe: ->
-    observer = Observer.make()    
-    @observers.add observer
-    observer
-    
-  cancel: ( observer ) ->
-    if @observers.has observer
-      observer.cancel()
-      @observers.delete observer
-      
-  dispatch: ( event ) ->
-    @observers.forEach ( observer ) ->
-      observer.dispatch event
+    Object.assign ( new @ ), { url, locator }
 
+  constructor: -> super()
+
+  resolve: -> @constructor.resolve @locator
+  
 export default Provider
