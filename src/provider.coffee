@@ -1,6 +1,3 @@
-# TODO switch to using a topic?
-#      do we even need a base class now?
-#      could we just do `x.topic.subscribe()`?
 
 import Topic from "@dashkite/reactive/topic"
 

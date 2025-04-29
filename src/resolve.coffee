@@ -12,7 +12,6 @@ resolve = do ->
         await Scout.discover locator.origin
       "#{ locator.origin }#{ target }"
 
-    # TODO support template-based locators in Scout?
     .define [ Obj.has "template" ], ( locator ) ->
       URLCodex.encode locator.template, locator.bindings
 
