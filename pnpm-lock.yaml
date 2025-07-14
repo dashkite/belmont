@@ -18,8 +18,8 @@ importers:
         specifier: 0.5.0
         version: 0.5.0
       '@dashkite/reactive':
-        specifier: link:../reactive
-        version: link:../reactive
+        specifier: 0.1.0
+        version: 0.1.0
       '@dashkite/scout':
         specifier: link:../scout
         version: link:../scout
@@ -662,6 +662,12 @@ packages:
 
   '@dashkite/parse@0.4.3':
     resolution: {integrity: sha512-bE0kBjaGYjUnCzWJelQnx8vsfJ9YP07aRTVFZoY7TZWvMmnihoCSugL4IVWAOA2O0EAZXjT8FcjA4bNJ/BQwwg==}
+
+  '@dashkite/parse@0.5.0':
+    resolution: {integrity: sha512-werLa650mYvKyNQOOA4kGxmwBTyLXbN+swZeGbVbXyjH+1XMNmnBDUreLPr3J3PYyeU1xH2Nu7qdjXxSjWNw+g==}
+
+  '@dashkite/reactive@0.1.0':
+    resolution: {integrity: sha512-iVYgfZmbw/5rTGlrASm4FoSHQO+qIdYF1KNWH7O10dyeh8lNRztgDVYF/7BTAsFRZ0wisHOsIJF/f4WlmVj4TA==}
 
   '@dashkite/url-codex@0.2.0':
     resolution: {integrity: sha512-12m6YzdBEP3Rb0QGTMv1cTw4KLO37VW3HDHuUQV7QJQOGRzvS5+iQqXLkhfDJBqRC4oc1t9+iQ/6PEUtYXXArw==}
@@ -2248,6 +2254,15 @@ snapshots:
   '@dashkite/parse@0.4.3':
     dependencies:
       '@dashkite/joy': 0.3.16
+
+  '@dashkite/parse@0.5.0':
+    dependencies:
+      '@dashkite/joy': 0.3.16
+
+  '@dashkite/reactive@0.1.0':
+    dependencies:
+      '@dashkite/joy': 0.5.0
+      '@dashkite/parse': 0.5.0
 
   '@dashkite/url-codex@0.2.0':
     dependencies:
