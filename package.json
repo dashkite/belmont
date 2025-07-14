@@ -48,10 +48,10 @@
   },
   "dependencies": {
     "@dashkite/addison": "link:../addison",
-    "@dashkite/generic": "link:../generic",
+    "@dashkite/generic": "0.3.0",
     "@dashkite/joy": "0.5.0",
     "@dashkite/reactive": "0.1.0",
-    "@dashkite/scout": "link:../scout",
+    "@dashkite/scout": "0.2.0",
     "@dashkite/url-codex": "0.2.0"
   }
 }
