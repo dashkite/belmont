@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@dashkite/addison':
-        specifier: link:../addison
-        version: link:../addison
       '@dashkite/generic':
         specifier: 0.5.0
         version: 0.5.0
