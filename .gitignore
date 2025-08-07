@@ -5,3 +5,4 @@ node_modules
 
 .tempo/repos
 .tempo/logs
+pnpm-lock.yaml
