@@ -19,9 +19,8 @@ subtest = ( description, specifier ) ->
 isResourceEvent = Fn.curry ( name, event ) ->
   ( event.name == name ) && ( event.scope == "resource" )
 
-# TODO we'll add scope criteria when Altair adds scope
 isRequestEvent = Fn.curry ( name, event ) ->
-  event.name == name
+  ( event.name == name ) && ( event.scope in [ "request", "response" ] )
 
 conformance = ( factory ) ->
   tests = [

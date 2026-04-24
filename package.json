@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "@dashkite/generic": "^0.5.0",
-    "@dashkite/joy": "^0.7.0",
+    "@dashkite/joy": "^0.12.25",
     "@dashkite/reactive": "^0.3.0",
     "@dashkite/scout": "link:../scout",
     "@dashkite/url-codex": "^0.5.0"
