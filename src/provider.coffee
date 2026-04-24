@@ -1,4 +1,3 @@
-
 import Topic from "@dashkite/reactive/topic"
 
 class Provider extends Topic
@@ -8,6 +7,8 @@ class Provider extends Topic
 
   constructor: -> super()
 
+  publish: ( event ) -> super event
+
   resolve: -> @constructor.resolve @locator
-  
+
 export default Provider

@@ -25,6 +25,10 @@
     "./*": {
       "browser": "./build/browser/src/*.js",
       "node": "./build/node/src/*.js"
+    },
+    "./test/*": {
+      "browser": "./build/browser/test/*.js",
+      "node": "./build/node/test/*.js"
     }
   },
   "files": [
