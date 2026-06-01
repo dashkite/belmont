@@ -51,7 +51,7 @@
     "@dashkite/generic": "^0.5.0",
     "@dashkite/joy": "^0.7.0",
     "@dashkite/reactive": "^0.3.0",
-    "@dashkite/scout": "link:../scout",
+    "@dashkite/scout": "^0.8.18",
     "@dashkite/url-codex": "^0.5.0"
   }
 }
