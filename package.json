@@ -43,7 +43,7 @@
     "@dashkite/genie": "^0.20.23",
     "@dashkite/genie-clean": "^0.9.0",
     "@dashkite/genie-coffee": "^0.9.0",
-    "@dashkite/genie-module": "^0.5.52",
+    "@dashkite/genie-module": "^0.5.53",
     "@dashkite/genie-release": "^0.5.12",
     "@dashkite/genie-yaml": "^0.7.0"
   },
@@ -51,7 +51,7 @@
     "@dashkite/generic": "^0.5.0",
     "@dashkite/joy": "^0.7.0",
     "@dashkite/reactive": "^0.3.0",
-    "@dashkite/scout": "^0.8.27",
+    "@dashkite/scout": "^0.8.28",
     "@dashkite/url-codex": "^0.5.0"
   }
 }
