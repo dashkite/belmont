@@ -52,7 +52,7 @@ conformance = ( factory ) ->
     await subtest "`delete` emits delete",
       resolve: factory.existing
       trigger: ({ resource }) -> resource.delete()
-      predicate: isResourceEvent "delete"
+      predicate: isResourceEvent "deleted"
   ]
 
   if factory.creatable?
