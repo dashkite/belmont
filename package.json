@@ -1,6 +1,6 @@
 {
   "name": "@dashkite/belmont",
-  "version": "0.3.14",
+  "version": "0.3.27",
   "description": "Chicago System Resource Manager",
   "keywords": [],
   "homepage": "https://github.com/dashkite/belmont#readme",
@@ -41,6 +41,7 @@
     "release": "genie release"
   },
   "devDependencies": {
+
     "@dashkite/amen": "0.5.0",
     "@dashkite/amen-console": "0.4.0",
     "@dashkite/assert": "0.3.0",
@@ -57,5 +58,6 @@
     "@dashkite/reactive": "0.3.0",
     "@dashkite/scout": "link:../scout",
     "@dashkite/url-codex": "0.5.0"
+
   }
 }
