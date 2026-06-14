@@ -41,7 +41,7 @@
     "release": "genie release"
   },
   "devDependencies": {
-    "@dashkite/amen": "link:../amen",
+    "@dashkite/amen": "^0.9.31",
     "@dashkite/amen-console": "0.4.0",
     "@dashkite/assert": "0.3.0",
     "@dashkite/genie": "0.20.14",
@@ -55,7 +55,7 @@
     "@dashkite/generic": "0.5.0",
     "@dashkite/joy": "0.12.40",
     "@dashkite/reactive": "0.7.33",
-    "@dashkite/scout": "link:../scout",
+    "@dashkite/scout": "^0.8.32",
     "@dashkite/url-codex": "0.5.0"
   }
 }
