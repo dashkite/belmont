@@ -4,15 +4,26 @@
 
 [![Hippocratic License HL3-CORE](https://img.shields.io/static/v1?label=Hippocratic%20License&message=HL3-CORE&labelColor=5e2751&color=bc8c3d)](https://firstdonoharm.dev/version/3/0/core.html)
 
-## Purpose
-
 Belmont manages reactive resource providers. It maps abstract resource locators to concrete URLs and delegates operations to the appropriate protocol-specific provider. This allows application logic to interact with resources (like HTTP APIs or local storage) in a uniform, reactive way.
+
+## Features
+
+- Resolves abstract resource locators to reactive providers.
+- Supports extensible protocol schemes via a provider registry.
+- Provides a consistent interface for operations on disparate underlying resources.
+- Leverages the Chicago System architecture for event-driven resource management.
 
 ## Installation
 
-Use your favorite package manager to install `@dashkite/belmont`.
+To install this package, run the following command:
+
+```shell
+pnpm install @dashkite/belmont
+```
 
 ## Usage
+
+This example illustrates how to register a provider and resolve a resource locator.
 
 ```coffee
 import Resource from "@dashkite/belmont"
@@ -38,8 +49,7 @@ resource.get()
 
 ## Other Resources
 
+- [Usage Guides](docs/recipes.md)
 - [Reference](docs/reference.md)
-
-## Status
-
-Not suitable for production use. Please report bugs and feature requests via the issue tracker.
+- [Technical Notes](docs/technical-notes.md)
+- [Testing](docs/testing.md)
